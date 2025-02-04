@@ -1,0 +1,41 @@
+<nav class="navbar collapsible">
+    <a href="/">
+        <img class="navbar__logo" src="images/logo.svg" alt="Logo">
+    </a>
+    <svg class="icon nav__toggler" id="nav__toggler">
+        <use xlink:href="images/icons/sprite.svg#menu"></use>
+    </svg>
+
+    <ul class="list navbar__menu collapsible__content">
+        <li class="list__item navbar__menu__item">
+            <a class="" href="#">Home</a>
+        </li>
+        <li class="list__item navbar__menu__item">
+            <a class="" href="#">Blog</a>
+        </li>
+        <li class="list__item navbar__menu__item">
+            <a class="" href="#">Single Post</a>
+        </li>
+        <li class="list__item navbar__menu__item">
+            <a class="" href="#">Pages</a>
+        </li>
+
+        <li class="list__item navbar__menu__item">
+            <a class="" href="#">Contact</a>
+        </li>
+    </ul>
+    <div class="navbar--actions collapsible__content">
+        <div class="navbar__input--group input--group ">
+            <input class="input navbar__input" type="text" placeholder="Search">
+            <button class="btn btn--input" type="submit">
+                <svg class="icon icon--small">
+                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                </svg>
+            </button>
+        </div>
+        <label class="mode--toggle">
+            <input type="checkbox" id="theme-switcher" name="theme-switcher"/>
+            <span class="mode--toggle__slider"></span>
+        </label>
+    </div>
+</nav>
