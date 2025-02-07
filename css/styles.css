@@ -611,6 +611,10 @@ a {
     position: relative;
 }
 
+.home .hero {
+    margin-bottom: 12rem;
+}
+
 .hero__image__container {
     border-radius: 12px;
     overflow: hidden;
@@ -723,8 +727,29 @@ a {
 
 .input--group__newsletter {
     margin-top: 3rem;
-    /*background-color: light-dark(var(--color-white), var(--color-dark));*/
+    transition: all 0.2s ease-out;
+}
 
+.input--group__newsletter:focus,
+.input--group__newsletter:focus-visible,
+.input--group__newsletter:focus-within {
+    outline: none;
+    border-color: var(--color-body-darker);
+    /* fill: var(--color-white); */
+}
+
+.input--group__newsletter:focus .icon--newsletter>path,
+.input--group__newsletter:focus-visible .icon--newsletter>path,
+.input--group__newsletter:focus-within .icon--newsletter>path {
+    fill: var(--color-white);
+}
+
+.icon--newsletter>path {
+    transition: all 0.2s ease-out;
+}
+
+.btn--input:hover .icon--newsletter>path {
+    fill: var(--color-white);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
